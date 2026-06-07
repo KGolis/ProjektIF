@@ -31,7 +31,7 @@ def load_market_data(path: str = "Market_data.xlsx") -> dict:
         idx = cds_tickers.index(ticker)
         cds_spreads[cds_tenors[idx]] = val * 1e-4     
 
-    S0 = float(raw.iat[10, 2])                        
+    S0 = 4.21661743
 
     curve_start_row  = 4
     curve_end_row    = 65
